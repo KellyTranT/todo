@@ -1,0 +1,131 @@
+*{ 
+    box-sizing: border-box; 
+}
+
+/* Background color for the site */
+body {
+    background-color: #fde7e8;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* Center the box that the to-do list is in + adds style */
+.container {
+    width: 60%;
+    background-color: white;
+    align-self: center;
+    display: block;
+    margin: 120px auto;
+    border: 2px solid #ffb6c1;
+    border-radius: 15px;
+}
+
+/* Removes margins and padding from list */
+ul { 
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the list */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    font-size: 16px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border-radius: 15px;
+    font-family: Coming Soon;
+}   
+
+/* makes list darker when hovered over */
+ ul li:hover { 
+    background: #eeeeee;
+} 
+
+/* strikes out text and adds color when assignment is clicked on */
+ul li.checked {
+    background: #fde7e8;
+    color: #fff;
+    text-decoration: line-through;
+} 
+
+/* adds check mark when assignment is clicked on */
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #ffb6c1;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* delete item style */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #eeeeee;
+    color: white;
+}
+
+/* header styling */
+.header {
+    padding: 30px 40px 55px 40px;
+    color: #ffb6c1;
+    text-align: center;
+    font-size: 20px;
+    font-family: Lemon;
+}
+
+.header.after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* input box styling */
+input { 
+    margin: 0;
+    border: 2px solid #ffb6c1;
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    font-family: Coming Soon;
+}
+
+/* button styling */
+.addBtn {
+    padding: 12px;
+    width: 19%;
+    background: #ffb6c1;
+    color: #555;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-family: Coming Soon;
+    font-size: 16px;
+}
+
+.addBtn:hover {
+    background-color: #f793a2;
+    font-family: Coming Soon;
+}
